@@ -1,0 +1,12 @@
+{
+	"datacenter": "{CLOUD}-{REGION}",
+	"data_dir": "/opt/consul",
+	"node_meta": {
+		"cloud": "{CLOUD}",
+		"instance_type": "{INSTANCE-TYPE}"
+	},
+	"retry_join_gce": {
+		"tag_value": "consul-server",
+		"zone_pattern": "{REGION}-.*"
+	}
+}

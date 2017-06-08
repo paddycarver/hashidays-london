@@ -1,0 +1,14 @@
+[Unit]
+Description=Consul Client
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/consul agent -config-file /etc/consul.d/client.json
+ExecReload=/bin/kill -9 $MAINPID
+KillSignal=SIGTERM
+Restart=on-failure
+RestartSec=1
+
+[Install]
+
+WantedBy=default.target
