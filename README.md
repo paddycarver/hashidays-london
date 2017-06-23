@@ -18,3 +18,9 @@ To build the Packer Image, change to the `nomad-image` directory and run `packer
 ## Standing Up the Cluster
 
 To stand up the cluster, run `terraform apply` from the root of the repository.
+
+## Support
+
+This code was used for a demo. It is unmaintained by default--issues and pull requests will be ignored. Please use the Packer and Terraform community channels for support for each project.
+
+This code is for demonstration purposes. It may not reflect all the best practices, and is not advice on how to set up your production infrastructure.
